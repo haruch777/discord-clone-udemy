@@ -2,7 +2,6 @@
     display: flex;
     flex: 0.35;
     height: 100vh;
-    background-color: #36393e;
 
     .sidebarLeft {
         display: flex;
@@ -33,6 +32,7 @@
     .sidebarRight {
         background-color: #2e3035;
         width: 300px;
+        position: relative;
 
         .sidebarTop {
             color: white;
@@ -58,6 +58,59 @@
                 }
             }
     
+        }
+
+        .sidebarFooter {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // padding-bottom: 10px;
+            // border-top: 1px solid #000000;
+            background-color: #292b2f;
+
+            .sidebarAccount {
+                padding:10px 10px;
+                display: flex;
+                align-items: center;
+                
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius:50%;
+                }
+
+                .accountName {
+                    margin-left: 5px;
+                    font-size: 90%;
+                    font-weight: 500;
+
+                    h4 {
+                        // font-size: 80%;
+                        // font-weight: 500;
+                        color: white;    
+                    }
+
+                    span {
+                        color: #77797d;
+                    }
+                }
+            }
+
+            .sidebarVoice {
+                // padding:10px 0px;
+                gap: 7px;
+                display: flex;
+                align-items: center;
+                color: #bcbec2;
+                
+                .MuiSvgIcon-root {
+                    cursor: pointer;
+                }
+            }
         }
     }
 
